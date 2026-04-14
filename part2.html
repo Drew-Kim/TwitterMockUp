@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlander Day Registration</title>
+    <link rel="stylesheet" href="part2.css">
+  </head>
+  <body>
+    <main class="registration-page">
+      <section class="registration-card">
+        <h1>Highlander Day Registration</h1>
+        <p class="page-note">A simple registration form for next year&apos;s event.</p>
+
+        <form class="registration-form" action="part2.html" method="get" autocomplete="off">
+          <div class="form-field">
+            <label for="first-name">First Name</label>
+            <input id="first-name" name="firstName" type="text" required pattern="[A-Za-z]+"
+              placeholder="First name">
+            <p class="error-message">Please enter letters only.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" name="lastName" type="text" required pattern="[A-Za-z]+"
+              placeholder="Last name">
+            <p class="error-message">Please enter letters only.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="birth-date">Date of Birth</label>
+            <input id="birth-date" name="birthDate" type="date" required max="2010-04-13">
+            <p class="error-message">Student must be at least 16 years old.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="college">College</label>
+            <select id="college" name="college" required>
+              <option value="">Select a college</option>
+              <option value="BCOE">BCOE</option>
+              <option value="CNAS">CNAS</option>
+              <option value="CHASS">CHASS</option>
+              <option value="SOB">SOB</option>
+              <option value="SPP">SPP</option>
+              <option value="SOE">SOE</option>
+            </select>
+            <p class="error-message">Please choose a college.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="major">Major</label>
+            <select id="major" name="major" required>
+              <option value="">Select a major</option>
+              <optgroup label="BCOE">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+              </optgroup>
+              <optgroup label="CNAS">
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Mathematics">Mathematics</option>
+              </optgroup>
+              <optgroup label="CHASS">
+                <option value="Psychology">Psychology</option>
+                <option value="Sociology">Sociology</option>
+                <option value="History">History</option>
+              </optgroup>
+              <optgroup label="SOB">
+                <option value="Business Administration">Business Administration</option>
+                <option value="Accounting">Accounting</option>
+              </optgroup>
+              <optgroup label="SPP">
+                <option value="Public Policy">Public Policy</option>
+              </optgroup>
+              <optgroup label="SOE">
+                <option value="Education">Education</option>
+              </optgroup>
+            </select>
+            <p class="error-message">Please choose a major.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}"
+              placeholder="10 digits">
+            <p class="error-message">Please enter exactly 10 digits.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required placeholder="name@example.com">
+            <p class="error-message">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="guests">Number of Guests</label>
+            <input id="guests" name="guests" type="number" min="1" required placeholder="1">
+            <p class="error-message">Please enter a number of at least 1.</p>
+          </div>
+
+          <div class="checkbox-field">
+            <input id="subscribe" name="subscribe" type="checkbox">
+            <label for="subscribe">Subscribe to UCR Events</label>
+          </div>
+
+          <div class="button-row">
+            <button class="submit-button" type="submit">Submit</button>
+            <button class="reset-button" type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

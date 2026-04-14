@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Page</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-navigation" role="navigation" aria-label="Main navigation">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <div class="navigation-links">
+          <a href="#">Home</a>
+          <a href="#">Moments</a>
+          <a href="#">Notifications</a>
+          <a href="#">Messages</a>
+        </div>
+
+        <a class="twitter-logo" href="#" aria-label="Twitter home">
+          <img src="./images/twitter-logo.png" alt="Twitter logo">
+        </a>
+
+        <button class="compose-button" type="button">Tweet</button>
+      </nav>
+    </header>
+
+    <div class="content-wrapper">
+      <aside class="content-left">
+        <section class="panel profile-panel">
+          <h2 class="sr-only">Profile</h2>
+
+          <div class="profile-cover-row">
+            <img
+              class="profile-cover-image"
+              src="./images/ratatouille-banner.png"
+              alt="Ratatouille banner"
+            >
+          </div>
+
+          <div class="profile-info-row">
+            <img class="profile-photo" src="./images/ratatouille.jpg" alt="Remy profile photo">
+            <div class="profile-identity">
+              <p class="profile-display-name">Remy</p>
+              <p class="account-handle">@remy</p>
+            </div>
+          </div>
+
+          <div class="profile-stats-row">
+            <div class="profile-stat">
+              <p class="stat-label">Tweets</p>
+              <p class="stat-count">5049</p>
+            </div>
+            <div class="profile-stat">
+              <p class="stat-label">Following</p>
+              <p class="stat-count">324</p>
+            </div>
+            <div class="profile-stat">
+              <p class="stat-label">Followers</p>
+              <p class="stat-count">809</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="content-center" id="main-content" role="main">
+        <section class="panel timeline-panel">
+          <h1>Home</h1>
+
+          <article class="tweet-item">
+            <img class="user-avatar" src="./images/ratatouille.jpg" alt="Remy profile photo">
+            <div class="tweet-content">
+              <p class="tweet-byline"><strong>Remy</strong> @littlechefremy &middot; 2h</p>
+              <p>
+                I don&apos;t want to constantly have to wash my paws. Did you ever think about how
+                we walk on the same paws that we handle food with?
+              </p>
+            </div>
+          </article>
+
+          <article class="tweet-item">
+            <img class="user-avatar" src="./images/linguini.png" alt="Linguini profile photo">
+            <div class="tweet-content">
+              <p class="tweet-byline"><strong>Alfredo Linguini</strong> @chef_linguini &middot; 4h</p>
+              <p>Rat patootie!</p>
+            </div>
+          </article>
+
+          <article class="tweet-item">
+            <img class="user-avatar" src="./images/ratatouille.jpg" alt="Remy profile photo">
+            <div class="tweet-content">
+              <p class="tweet-byline"><strong>Remy</strong> @littlechefremy &middot; 7h</p>
+              <p>If you are what you eat, then I only want to eat the <span class="tweet-highlight">good</span> stuff.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <aside class="content-right" aria-label="Who to follow">
+        <section class="panel follow-panel">
+          <h2>Who to follow</h2>
+
+          <div class="follow-suggestion">
+            <img class="user-avatar" src="./images/linguini.png" alt="Linguini profile photo">
+            <div>
+              <p class="follow-display-name">Alfredo Linguini</p>
+              <p class="account-handle">@chef_linguini</p>
+              <button class="follow-action-button" type="button">Follow</button>
+            </div>
+          </div>
+
+          <div class="follow-suggestion">
+            <img class="user-avatar" src="./images/ratatouille.jpg" alt="Remy profile photo">
+            <div>
+              <p class="follow-display-name">Remy</p>
+              <p class="account-handle">@littlechefremy</p>
+              <button class="follow-action-button" type="button">Follow</button>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </body>
+</html>
