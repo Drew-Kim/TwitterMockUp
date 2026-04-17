@@ -74,8 +74,8 @@ select {
   border-color: #555555;
 }
 
-.form-field input:user-invalid,
-.form-field select:user-invalid {
+.form-field input.is-invalid,
+.form-field select.is-invalid {
   border: 2px solid #c62828;
 }
 
@@ -86,8 +86,7 @@ select {
   font-size: 12px;
 }
 
-.form-field input:user-invalid + .error-message,
-.form-field select:user-invalid + .error-message {
+.form-field.show-error .error-message {
   display: block;
 }
 
@@ -115,7 +114,7 @@ select {
   cursor: pointer;
 }
 
-.registration-form:invalid .submit-button {
+.submit-button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
